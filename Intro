@@ -1,1 +1,73 @@
 Introduction
+
+Goal: LLM and NLP using libraries from HF ecosystem-Transformers, Dtasets, Tokenizers, Accelerate
+
+NLP: Field of linguistics and ML focused on understanding human language. Text generation, Speech recognition
+LLM: Revolutionised NLP with models like GPT, Llama. Shifted from task specific models to general purpose models.
+
+Common NLP tasks: Classifying sentences, Classifying words, Generating text, Extracting answers
+
+NLP: It is teaching a kid how to read books, write, understand
+LLM: It is like when kid grows up and becomes smart--they can answer on theor own.
+
+Characteristics of LLM: Scale (billions of parameters), General capabilities, In-context learning from prompt, Emergent abilities.
+
+Pipeline
+
+The 🤗 Transformers library provides the functionality to create and use those shared models
+Tasks: Text classification, zero-shot classification, Text generation, Tetx completion, Token classification, Question answering, Summarization, Translation
+
+The most basic object in the 🤗 Transformers library is the pipeline() function. It connects a model with its necessary preprocessing and postprocessing steps, allowing us to directly input any text and get an intelligible answer.
+
+
+Available pipelines for different modalities
+
+Text-pipelines
+text-generation: Generate text from a prompt
+text-classification: Classify text into predefined categories
+summarization: Create a shorter version of a text while preserving key information
+translation: Translate text from one language to another
+zero-shot-classification: Classify text without prior training on specific labels
+feature-extraction: Extract vector representations of text.
+
+Image pipelines
+image-to-text: Generate text descriptions of images
+image-classification: Identify objects in an image
+object-detection: Locate and identify objects in images
+
+Audio pipelines
+automatic-speech-recognition: Convert speech to text
+audio-classification: Classify audio into categories
+text-to-speech: Convert text to spoken audio
+
+Multimodal pipelines
+image-text-to-text: Respond to an image based on a text prompt
+
+Carbon footprint of transformers
+
+code carbon
+Ml emissions calculator (https://mlco2.github.io/impact/)
+
+
+Transformer models
+GPT : Auto-regressive transformer models
+BERT : Auto-encoding transformer models
+T5 : Sequence-to-sequence transformer models
+Llama
+Mistral
+
+Self-supervised learning is a type of training in which the objective is automatically computed from the inputs of the model. That means that humans are not needed to label the data.
+This type of model develops a statistical understanding of the language it has been trained on, but it’s less useful for specific practical tasks. Because of this, the general pretrained model then goes through a process called transfer learning or fine-tuning. 
+During this process, the model is fine-tuned in a supervised way — that is, using human-annotated labels — on a given task.
+
+
+So first, model learns from data (NLP) and then it goes through transofrmation so it can smartly respond (LLM)--- for smartness--fine tuning is required(by humans)--to achieve a objective. Fine tuning is like giving exam to a model and see if model is ready for final exam.
+
+Sharing language models is paramount: sharing the trained weights and building on top of already trained weights reduces the overall compute cost and carbon footprint of the community.
+
+Transfer learning: Pretraining, Fine tuning
+
+General Transformer architecture
+
+Encoders, decoders, encode-ecoders
+
