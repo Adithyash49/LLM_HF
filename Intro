@@ -8,7 +8,7 @@ LLM: Revolutionised NLP with models like GPT, Llama. Shifted from task specific 
 Common NLP tasks: Classifying sentences, Classifying words, Generating text, Extracting answers
 
 NLP: It is teaching a kid how to read books, write, understand
-LLM: It is like when kid grows up and becomes smart--they can answer on theor own.
+LLM: It is like when kid grows up and becomes smart--they can answer on there own.
 
 Characteristics of LLM: Scale (billions of parameters), General capabilities, In-context learning from prompt, Emergent abilities.
 
@@ -77,5 +77,23 @@ Encoders(sentence classification/Named entity recognition), decoders(text genera
 
 A key feature of Transformer models is that they are built with special layers called attention layers.
 
+Solving tasks with transformers
 
+It’s helpful to understand that most tasks follow a similar pattern: input data is processed through a model, and the output is interpreted for a specific task. 
+The differences lie in how the data is prepared, what model architecture variant is used, and how the output is processed.
+
+Transformer models for language
+
+Masked language model
+Casual language model
+
+Types of language models
+
+Encoder--BERT--classification, NER, Question/answer
+Decoder--GPT,LLAMA--translation, summary--They can complete sentences, write essays, or even generate code based on a prompt.
+Encoder-Decoder--T5, BART--They excel at sequence-to-sequence tasks like translation, summarization, and question answering.
+
+
+A tokenizer is a tool or algorithm in NLP that breaks down text into tokens
+In Natural Language Processing (NLP), a token is a basic unit of text that a model processes.
 
