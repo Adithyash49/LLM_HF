@@ -69,5 +69,13 @@ Transfer learning: Pretraining, Fine tuning
 
 General Transformer architecture
 
-Encoders, decoders, encode-ecoders
+Encoders: Convert inputs(text) to numerical representations (called embeddings or features)--Bidirectiona and self attention mechanism
+Decoders: Siilar to encoder; Uni-directional, Auto-regressive and masked self attention
+
+
+Encoders(sentence classification/Named entity recognition), decoders(text generation), encoders-decoders(translation or summarization)
+
+A key feature of Transformer models is that they are built with special layers called attention layers.
+
+
 
