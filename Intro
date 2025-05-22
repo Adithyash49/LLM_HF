@@ -97,3 +97,15 @@ Encoder-Decoder--T5, BART--They excel at sequence-to-sequence tasks like transla
 A tokenizer is a tool or algorithm in NLP that breaks down text into tokens
 In Natural Language Processing (NLP), a token is a basic unit of text that a model processes.
 
+
+Trnasformer architecture: 
+
+Encoder examples: BERT, DistilBERT, ModernBERT; auto-encoding
+Decoder: Known as Auto-regressive model.Hugging Face SmolLM Series, Meta’s Llama Series, Google’s Gemma Series ,DeepSeek’s V3.
+Encoder-decoder models: Sequence-to-sequence models; T5, Marian, BART
+
+
+
+
+
+
