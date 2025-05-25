@@ -1,1 +1,20 @@
+Pipelines consists of three stages.
 
+1.) Tokenizer: convert raw text io input Id's
+2.) Model: Input Id's to logits
+3.) Post-processing : Logits to predictions
+
+A tokenizer is a tool that converts raw text into tokens (smaller pieces like words, subwords, or characters) that a machine learning model can understand.
+
+Automodel API allows to instantiate a pretrained model from any check point.
+
+1. Use pipeline() when:
+You want simplicity and rapid prototyping.
+The model task is supported by Hugging Face’s built-in pipeline tasks (like "text-generation", "image-to-text", etc.).
+You don't need to customize architecture or preprocessing much.
+
+ 2. Use AutoModel + tokenizer when:
+You need more control over the model's architecture, inputs, or outputs.
+You’re building a custom application, doing fine-tuning, or handling non-standard tasks (e.g., combining image and structured output).
+
+Tokenizers: Word-based, Character-based, Sub-word (Wordpiece, Unigram, Byte pair encoding
