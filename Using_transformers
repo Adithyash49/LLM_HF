@@ -18,3 +18,12 @@ You need more control over the model's architecture, inputs, or outputs.
 You’re building a custom application, doing fine-tuning, or handling non-standard tasks (e.g., combining image and structured output).
 
 Tokenizers: Word-based, Character-based, Sub-word (Wordpiece, Unigram, Byte pair encoding
+
+"padding" refers to adding extra data, often blank or null, to a data structure, field, or packet to fill up unused space or achieve a desired length.
+
+Logits are the outputs of a neural network before the activation function is applied. They are the unnormalized probabilities of the item belonging to a certain class.
+Logits are often used in classification tasks, where the goal is to predict the class label of an input. For example, if you are trying to classify an image of a cat or a dog, 
+the logits would be the probabilities that the image is a cat or a dog. 
+The softmax function is then applied to the logits to normalize them to sum to 1. This ensures that the probabilities of all classes add up to 1 and that the most likely class has the highest probability.
+
+the AutoModel only needs to know the checkpoint from which to initialize to return the correct architecture.
